@@ -120,6 +120,7 @@ function inTheDiv() {
     for (var i = 0; i < domArr.length; i++) {
         domArr[i].remove();
     }
+    domArr = [];
 
     for (var i = 0; i < n; i++) {
         var newDiv = document.createElement("div");
@@ -132,6 +133,7 @@ function inTheDiv() {
         }
         domArr.push(newDiv);
     }
+    console.log(domArr);
 }
 document.getElementById("btnXuatThe").onclick = inTheDiv;
 
